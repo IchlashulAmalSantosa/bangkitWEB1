@@ -1,0 +1,229 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background image */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    background-image: url('/assets/img/cly1.webp');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 10px;
+    color: chartreuse;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Navbar styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:  chartreuse;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Content box styling */
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%; /* Make it responsive */
+    max-width: 1050px; /* Retain max width */
+}
+
+/* Box styling for text */
+.text-box {
+    background-color: white;
+    padding: 20px;
+    max-width: 60%; /* Max width for text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Image positioning */
+.image-container img {
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.asideimage-container img {
+    max-width: 300px;
+    height: 125px;
+    margin-left: 1px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:  chartreuse;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .content-box {
+        flex-direction: column;
+    }
+
+    .text-box {
+        max-width: 100%; /* Full width for mobile */
+    }
+
+    .image-container img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Styling for aside */
+#sidebar {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+}
+
+#sidebar h3 {
+    margin-bottom: 15px;
+    color: chartreuse;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#sidebar ul li a:hover {
+    color: chartreuse;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    #sidebar {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 100%; /* Make it responsive */
+    max-width: 1300px; /* Retain max width */
+    margin: 0 auto;
+}
+
+.card {
+    width: 50%;
+    text-align: center;
+}
+
+.address {
+    width: 40%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 350px;
+}
